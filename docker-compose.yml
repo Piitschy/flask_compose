@@ -1,5 +1,7 @@
 version: '3'
 services:
-    flask:
-        image:  python:3.10-alpine
-        restart: always
+  flask:
+    image:  python:3.10-alpine
+    restart: always
+    volumes:
+      - ./flask:/code
