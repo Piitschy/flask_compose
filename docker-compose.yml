@@ -5,8 +5,10 @@ services:
         ports:
             - "7359:5000"
         volumes:
-            - ./flask:/code
+            - flask:/code
         depends_on:
             - redis
     redis:
         image: redis
+volumes:
+  flask:
