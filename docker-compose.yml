@@ -6,7 +6,6 @@ services:
             - "7359:5000"
         volumes:
             - ./flask:/code
-        working_dir: /code
         depends_on:
             - redis
     redis:
