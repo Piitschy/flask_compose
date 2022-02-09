@@ -1,6 +1,4 @@
 version: '3'
 services:
     web:
-        image: python:3.10
-        ports:
-            - "7359:5000"
+        image: alpine
