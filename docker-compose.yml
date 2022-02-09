@@ -5,9 +5,8 @@ services:
         ports:
             - "7359:5000"
         volumes:
-            - flask:/code
+            - ./flask:/code
         working_dir: /code
-        command: sh -c "ls"
         command: sh -c "pip install -r requirements.txt && python app.py"
         depends_on:
             - redis
