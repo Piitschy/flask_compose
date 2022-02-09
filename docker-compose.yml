@@ -4,9 +4,3 @@ services:
         image: python:3.10
         ports:
             - "7359:5000"
-        volumes:
-            - ./flask:/code
-        depends_on:
-            - redis
-    redis:
-        image: redis
