@@ -3,7 +3,7 @@ services:
   flask:
     build: ./flask
     ports:
-      - "9999:5000"
+      - "6646:5000"
     restart: always
     volumes:
       - ./flask:/code
