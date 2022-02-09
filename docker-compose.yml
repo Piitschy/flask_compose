@@ -1,7 +1,7 @@
 version: '3'
 services:
   flask:
-    image:  python:3.10-alpine
+    build: ./flask
     restart: always
     volumes:
       - ./flask:/code
