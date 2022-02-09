@@ -2,8 +2,6 @@ version: '3'
 services:
   flask:
     image: python:3.10-alpine
-    ports:
-      - '777:5000'
     volumes:
       - flask:/code
 
