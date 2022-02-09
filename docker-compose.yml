@@ -4,7 +4,6 @@ services:
     image: python:3.10-alpine
     ports:
       - '777:5000'
-    restart: always
     volumes:
       - flask:/code
 
