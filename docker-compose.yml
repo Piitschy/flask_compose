@@ -1,11 +1,11 @@
 version: '2'
 services:
     web:
-        build: .
+        build: ./flask
         ports:
             - "7359:5000"
         volumes:
-            - .:/code
+            - ./flask:/code
         depends_on:
             - redis
     redis:
