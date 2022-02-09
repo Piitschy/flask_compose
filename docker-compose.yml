@@ -1,4 +1,5 @@
 version: '3'
 services:
-    web:
-        image: alpine
+    flask:
+        image:  python:3.10-alpine
+        restart: always
